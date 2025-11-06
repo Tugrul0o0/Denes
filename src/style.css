@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#three-canvas {
+  display: block;
+}
+
+#info-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  pointer-events: none; /* Bu katmanın tıklamaları engellememesini sağlar */
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; /* Işıklandırma efekti */
+}
+
+#info-overlay .small-text {
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #cccccc;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+/* Yükleme tamamlandığında bu sınıf eklenerek overlay gizlenecek */
+.hidden {
+  display: none;
+}
